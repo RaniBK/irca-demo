@@ -1,0 +1,894 @@
+
+
+<!DOCTYPE html>
+<html class="no-js desktop ">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Exoskills is a design office which creates connected products and services to analyse, understand, improve and connect daily life.">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2a2a2a">
+    <meta name="msapplication-TileImage" content="../mstile-144x144.png">
+    <meta name="theme-color" content="#2a2a2a">
+
+        <meta property="og:site_name" content="Exoskills">
+    <meta property="og:url" content="renault-hmi.html">
+    <meta property="og:title" content="Renault HMI">
+    <meta property="og:description" content="Exoskills is a design office which creates connected products and services to analyse, understand, improve and connect daily life.">
+    <meta property="og:image" content="../assets/img/exoskills-share.jpg">
+
+    <title>SIP</title>
+
+        <script src="../assets/js/lib/modernizr-custom.min.js"></script>
+
+        <!--[if lte IE 9]>
+    <script src="http://www.exo-skills.com/assets/js/lib/history.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+	
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/css/animations.css">
+	<link rel="stylesheet" href="../assets/css/demo.css">
+	<link rel="stylesheet" href="../assets/css/animate.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	<script src="../assets/js/viewportchecker.js"></script>
+	
+	<script type="text/javascript">
+        window.onload = function(){
+            window.displayImgCount = 0;
+            function cycleImage(){
+                if (displayImgCount !== 0) {
+                    document.getElementById("img" + displayImgCount).style.display = "none";
+                }
+                displayImgCount = displayImgCount === 3 ? 1 : displayImgCount + 1;
+                document.getElementById("img" + displayImgCount).style.display = "block";
+                setTimeout(cycleImage, 1500);
+            }
+            cycleImage();
+        }
+    </script>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script>
+	$(document).ready(function() {
+	
+		$(".page-header-cover").css("opacity","1");
+	
+		$(".page").css("opacity", "1");
+		$("#nav").css("visibility", "visible");
+		$(".page-header-title").addClass("w3-animate-left");
+		$(".page-header-title-line").css("opacity", "1");
+		$(".case-next-btn-label").css("opacity","1");
+		$(".case-next-btn-project-title").css("opacity","1");
+		
+		$("#background-sip-button").click(function(){
+			$("#background-sip-button").addClass("btn-sip-active");
+			$("#why-sip-button").removeClass("btn-sip-active");
+			$("#usability-sip-button").removeClass("btn-sip-active");
+			$("#case-study-sip-button").removeClass("btn-sip-active");
+			$("#servo-sip-heading").text("Background");
+			$("#servo-sip-content").html("Businesses today often succeed or fail based on how efficiently and effectively they manage everyday business task of sales. Using mobile technology, software and the Internet, Distribution Management System (DMS) uses mobile handheld units and software to automate the business tasks of sales. Our software can be tailored to provide your salespersons with precisely the information they need to close sales and facilitate order processing the way you do business.").append("<br><br>").append("DMS solutions puts into the hands of your Field Sales Force the tools they need to effectively compete in today’s marketplace.").append("<br><br>").append("At the same time, it lowers the cost of the fulfillment process while increasing efficiency, accuracy and that most critical factor - Customer Satisfaction").append("<br><br>").append("This Software includes Indent Order Management, customer Contact Management, Order tracking, even Sales forecast analysis, and Accounting history.").append("<br><br>").append("It can let you provide your sales force with mobile access to real-time information while it allows you to manage the entire selling process, including post-sale follow-up and support, as well as up-selling opportunities.");
+			$("#sip-4-btn-images").attr("src","../assets/img/cases/renault-integrity/1.jpg");
+		});
+		$("#why-sip-button").click(function(){
+			$("#why-sip-button").addClass("btn-sip-active");
+			$("#background-sip-button").removeClass("btn-sip-active");
+			$("#background-sip-button").addClass("btn-sip");
+			$("#usability-sip-button").removeClass("btn-sip-active");
+			$("#case-study-sip-button").removeClass("btn-sip-active");
+			$("#servo-sip-heading").html("why SIP?").append("<br>").append("<p>Challenges of today’s Sales Force!</p>");
+			$("#servo-sip-content").html("<ul><li>Business Officer (BO) does not have real-time data of Dealer Outstanding</li><li>BO’s do not have real-time data on Dealer Performance and therefore Dealer incentives</li><li>BO’s lack awareness of their sales achievement on a daily basis and therefore their incentives</li><li>Lack of providing real-time Dealer feedback to Head Office</li><li>Unproductive hours spent in filling paper forms and data entry</li><li>Tracking of BO’s performance on the field</li><li>Web Admin are unable to set a customized route for their BO’s.</li><li>Beat route tracking of the BO’s</li></ul>");
+			$("#sip-4-btn-images").attr("src","../assets/img/sip-diagram.jpg");
+		});
+		$("#usability-sip-button").click(function(){
+			$("#usability-sip-button").addClass("btn-sip-active");
+			$("#why-sip-button").removeClass("btn-sip-active");
+			$("#background-sip-button").addClass("btn-sip");
+			$("#background-sip-button").removeClass("btn-sip-active");
+			$("#case-study-sip-button").removeClass("btn-sip-active");
+			$("#servo-sip-heading").html("Usability").append("<br><p>Why does your business need SIP</p>");
+			$("#servo-sip-content").html("<ul><li>Easy Data Entry, Data Selection. No Pen-Paper entry required</li><li>Sales team to efficiently access and manage the information relating to their customer and the product</li><li>Real time retrieval and updating of information provides correct information at the right time as and when required</li><li>Increased Productivity</li><li>Reduction of duplicity and errors</li><li>Real time location tracking</li><li>Reduced sales call cost</li><li>Discovery fake orders</li><li>Payment collection information on real time basis</li></ul>");
+			$("#sip-4-btn-images").attr("src","../assets/img/cases/engie-digital-design/3.jpg");
+		});
+		$("#case-study-sip-button").click(function(){
+			$("#case-study-sip-button").addClass("btn-sip-active");
+			$("#usability-sip-button").removeClass("btn-sip-active");
+			$("#why-sip-button").removeClass("btn-sip-active");
+			$("#background-sip-button").addClass("btn-sip");
+			$("#background-sip-button").removeClass("btn-sip-active");
+			$("#servo-sip-heading").text("Case study");
+			$("#servo-sip-content").html("<ul><li>BO’s create Daily call reports at various Dealers using their mobile app. They register complaints or Dealer feedback via this tool as well. They can take photographs, which is reflected in the Web module. This helps their Supervisor to track and react quickly to Dealer’s concerns</li><li>The Mobile application also allows the BO’s to log and identify new sales opportunities / dealers</li><li>The tool also helps improve BO and Dealer performance in terms of meeting and or exceeding their Sales targets. With a strong incentive management process this tool helps track real-time for both</li><li>Dealer outstanding module helps BO’s to ensure payment is done on time</li><li>The BO also sees his overall Sales achievement and is able to compare his Sales achievement to last year</li><li>Route management on the mobile phone helps manage and track the BO movement effectively</li></ul>");
+			$("#sip-4-btn-images").attr("src","../assets/img/cases/shopping-robot/4.jpg");
+		});
+	});
+	</script>
+
+      </head>
+  <body class="page-id-renault-integrity">
+
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="sprite-arrow-01" viewBox="0 0 36.5 84.7">
+<path d="M34.7,0.7c-0.2-1.1-1.9-0.7-1.6,0.4c6.2,28.3,0.6,67.7-27.9,80.6c3.7-3.2,5.2-6.5,4.3-6.9
+	c-0.8-0.4-0.9,0.7-2.3,3C4.8,81,3.3,82,0.4,83.6c-0.6,0.3-0.3,1.2,0.4,1.1c2-0.3,2.3-0.4,5.8-0.4c5.7,0,6.5,0.5,6.5-0.3
+	c0-0.3-0.2-0.6-0.5-0.6C9,83.1,6.9,83,4.9,83.1c6.3-2.4,9.9-4.8,15.3-10.1C41.3,49,36.6,9.2,34.7,0.7z"/>
+</symbol><symbol id="sprite-arrow-02" viewBox="0 0 34.6 60.3">
+<path d="M34.6,58.3c0,0-4.8-1.8-6.9-9.8c-0.1-0.3-0.3-0.4-0.6-0.4c-0.3,0.1-0.4,0.3-0.4,0.6c1,3.7,2.6,6.5,5.3,9.1
+	C19.2,56.3,11.8,45.6,7.8,36.7C2.2,24.2,0.6,9.8,1.1,0.5C1.1,0.2,0.9,0,0.6,0S0.1,0.2,0.1,0.5c-1,22.1,8.3,55.2,31.4,58.3
+	c-3.6,0.9-6.7,0.5-10.1,0.1c-0.3,0-0.5,0.2-0.6,0.4c0,0.3,0.2,0.5,0.4,0.6c1.8,0.2,3.6,0.5,5.5,0.5c2.3,0,4.8-0.3,7.6-1.4
+	C34.6,58.8,34.7,58.5,34.6,58.3z"/>
+</symbol><symbol id="sprite-arrow-03" viewBox="0 0 92.7 129.5">
+<path d="M24.2,8.9C15.4,6.5,9.1,6.6,2.9,7.6C7.2,3.7,9.1,2.9,15.3,1C16,0.8,15.7-0.2,15,0c-2.4,0.8-3.5,1-6,2.2
+	C6.8,3.1,2.6,6.2,1,8C0.8,8,0.6,8.1,0.4,8.1c-0.5,0.1-0.5,0.8-0.1,1c0,0.2,0.1,0.4,0.4,0.4c10.2,1.2,14.3,3.3,16.4,4.3
+	c0.6,0.3,1.1-0.7,0.4-1c-3.4-1.6-6.2-2.9-14.8-4.1C21.1,5.7,37,13.4,52,24.9c31.6,27.8,38.7,61.4,38.2,103.6c0,0.6,0.4,1,1,1
+	C95.6,129.5,95.4,28.6,24.2,8.9z"/>
+</symbol><symbol id="sprite-arrow-04" viewBox="-407 290.3 21 16">
+<path d="M-394,290.3l-1.4,1.4l5.6,5.6H-407v2h17.2l-5.6,5.6l1.4,1.4l8-8L-394,290.3z"/>
+</symbol><symbol id="sprite-behance" viewBox="-504 552.7 512 318.6">
+<path d="M-54,724.7c-1.1-15.9-6.4-27.9-15.9-36.1c-9.5-8.2-21.3-12.4-35.4-12.4c-15.3,0-27.2,4.4-35.6,13.1
+	c-8.5,8.7-13.8,20.4-15.9,35.3 M6,718.8c1.6,10.4,2.2,25.5,2,45.3h-166.2c0.9,22.9,8.8,39,23.9,48.2c9,5.7,20,8.6,32.9,8.6
+	c13.6,0,24.6-3.4,33.1-10.5c4.6-3.7,8.7-9,12.2-15.6H4.8c-1.6,13.5-8.9,27.3-22.1,41.2c-20.4,22.2-49.1,33.3-85.8,33.3
+	c-30.4,0-57.1-9.4-80.4-28.1c-23.2-18.8-34.8-49.2-34.8-91.4c0-39.6,10.4-69.9,31.4-91c21-21.1,48.2-31.6,81.6-31.6
+	c19.8,0,37.7,3.5,53.7,10.7c15.9,7.1,29,18.4,39.4,33.8C-2.9,685.2,3.2,700.9,6,718.8z M-310,770.6c0-16.6-6.8-28-20.3-34.1
+	c-7.5-3.5-18.2-5.3-31.9-5.4h-68.3V816h67.3c13.8,0,24.5-1.8,32.3-5.6C-317,803.4-310,790.2-310,770.6z M-430.5,678.3h67.4
+	c13.8,0,25.1-2.6,33.7-7.9s12.9-14.6,12.9-28c0-14.8-5.7-24.7-17.1-29.4c-9.8-3.3-22.4-5-37.6-5h-59.3 M-255.3,728.5
+	c8.3,12.8,12.4,28.4,12.4,46.7c0,18.9-4.7,35.9-14.2,50.8c-6,9.9-13.5,18.3-22.5,25c-10.1,7.8-22.2,13.1-36,16s-28.8,4.3-45,4.3
+	H-504V552.7h153.9c38.8,0.6,66.3,11.9,82.5,33.9c9.7,13.5,14.6,29.8,14.6,48.6c0,19.5-4.9,35.1-14.7,46.9
+	c-5.5,6.6-13.6,12.7-24.3,18.1C-275.8,706.3-263.5,715.6-255.3,728.5z M-41.6,597.8h-128.3v-31.9h128.3L-41.6,597.8L-41.6,597.8z"/>
+</symbol><symbol id="sprite-googleplus" viewBox="-431 259 448 384.1">
+<path d="M-220.9,470.6l-18.2-13.7l-0.1-0.1c-5.8-4.6-10-8.3-10-14.7c0-7,5-11.8,10.9-17.4l0.5-0.4c20-15.2,44.7-34.3,44.7-74.6
+	c0-26.9-11.9-44.7-23.3-57.7h13l60.4-33h-133.5c-25.3,0-62.7,3.2-94.6,28.6l-0.1,0.3c-21.8,18-34.8,44.5-34.8,70.6
+	c0,21.2,8.7,42.2,23.9,57.4c21.4,21.6,48.3,26.1,67.1,26.1c1.5,0,3,0,4.5-0.1c-0.8,3-1.2,6.3-1.2,10.3c0,10.9,3.6,19.3,8.1,26.2
+	c-24,1.9-58.1,6.5-84.9,22.3c-39.4,22.7-42.5,56-42.5,65.6c0,38.2,35.7,76.8,115.5,76.8c91.6,0,139.5-49.8,139.5-99
+	C-176,507-198.8,488.5-220.9,470.6z M-346.3,334.9c0-13.4,3-23.5,9.3-30.9c6.5-7.9,18.2-13.1,29-13.1c19.9,0,32.9,15,40.4,27.6
+	c9.2,15.5,14.9,36.1,14.9,53.6c0,4.9,0,20-10.2,29.8c-7,6.7-18.7,11.4-28.6,11.4c-20.5,0-33.5-14.7-40.7-27
+	C-342.6,368.5-346.3,348.1-346.3,334.9z M-225.2,563c0,27.4-25.2,44.5-65.8,44.5c-48.1,0-80.3-20.6-80.3-51.3
+	c0-26.1,21.5-36.8,37.8-42.5c18.9-6.1,44.3-7.3,50.1-7.3c3.9,0,6.1,0,8.7,0.2C-238.1,531.8-225.2,542.7-225.2,563z"/>
+<polygon points="-61,337 -61,259 -95,259 -95,337 -175,337 -175,371 -95,371 -95,452 -61,452 -61,371 17,371 17,337 "/>
+</symbol><symbol id="sprite-linkedin" viewBox="-504 245.4 430.1 411">
+<g>
+	<path id="LinkedIn" d="M-73.9,497.4v159h-92.2V508.1c0-37.3-13.3-62.7-46.7-62.7c-25.5,0-40.6,17.1-47.3,33.7
+		c-2.4,5.9-3.1,14.2-3.1,22.5v154.9h-92.2c0,0,1.2-251.3,0-277.3h92.2v39.3c-0.2,0.3-0.4,0.6-0.6,0.9h0.6v-0.9
+		c12.3-18.9,34.1-45.8,83.1-45.8C-119.4,372.6-73.9,412.2-73.9,497.4z M-451.8,245.4c-31.5,0-52.2,20.7-52.2,47.9
+		c0,26.6,20,47.9,51,47.9h0.6c32.2,0,52.2-21.3,52.2-47.9C-400.9,266.1-420.3,245.4-451.8,245.4z M-498.5,656.4h92.2V379.1h-92.2
+		V656.4z"/>
+</g>
+</symbol><symbol id="sprite-london" viewBox="0 0 43.2 42">
+<path style="fill:#B6A68C;" d="M43.2,15.5H43v-0.2v-2.1v-0.3h0v-0.3l-1.4-2.7h0V9.8h-0.4V7.6V7.5h0c0,0-1.1-2.8-1.3-5.6h0
+	C40,1.9,40,1.8,40,1.8c0-0.1-0.1-0.1-0.1-0.1h0h-0.1h0V0.2h0c0,0,0,0,0-0.1c0,0,0-0.1,0-0.1h0v0h-0.1v0h0c0,0,0,0,0,0.1
+	c0,0,0,0.1,0,0.1h0v1.5h0h-0.1h0c-0.1,0-0.1,0.1-0.1,0.1c0,0.1,0.1,0.1,0.1,0.1h0c-0.2,2.8-1.4,5.6-1.4,5.6h0v0.1v2.1h-0.4v0.1h0
+	l-1.4,2.7v0.3h0v0.3v2.1v0.2h-0.2v6.6h0.2v0.2V42H43V22.3v-0.2h0.2V15.5z"/>
+<path style="fill:#F6F5F5;" d="M38,13.9c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1V15H38V13.9z"/>
+<path style="fill:#F6F5F5;" d="M38.7,13.9c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1V15h0.4V13.9z"/>
+<path style="fill:#F6F5F5;" d="M39.3,13.9c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1V15h0.4V13.9z"/>
+<path style="fill:#F6F5F5;" d="M40,13.9c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1V15H40V13.9z"/>
+<path style="fill:#F6F5F5;" d="M40.6,13.9c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1V15h0.4V13.9z"/>
+<path style="fill:#F6F5F5;" d="M41.3,13.9c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1V15h0.4V13.9z"/>
+<path style="fill:#F6F5F5;" d="M41.9,13.9c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1V15h0.4V13.9z"/>
+<circle style="fill:#F6F5F5;" cx="39.8" cy="18.8" r="1.8"/>
+<polygon style="fill:#B6A68C;" points="39.6,19.2 39.7,16.9 39.9,19.2 "/>
+<polygon style="fill:#B6A68C;" points="39.4,19.1 40.6,17.8 39.6,19.2 "/>
+<polygon style="fill:#E6E6E6;" points="38.7,10.5 38.5,10.7 38.5,10.7 38.5,11.3 38.5,11.3 38.9,11.3 38.9,11.3 38.9,10.7 
+	38.9,10.7 "/>
+<polygon style="fill:#E6E6E6;" points="39.8,10.5 39.6,10.7 39.6,10.7 39.6,11.3 39.6,11.3 39.9,11.3 40,11.3 40,10.7 39.9,10.7 "/>
+<polygon style="fill:#E6E6E6;" points="40.8,10.5 40.6,10.7 40.6,10.7 40.6,11.3 40.7,11.3 41,11.3 41,11.3 41,10.7 41,10.7 "/>
+<polygon style="fill:#E6E6E6;" points="38.2,11.5 38,11.7 38,11.7 38,12.3 38.1,12.3 38.4,12.3 38.4,12.3 38.4,11.7 38.4,11.7 "/>
+<polygon style="fill:#E6E6E6;" points="39.3,11.5 39.1,11.7 39,11.7 39,12.3 39.1,12.3 39.4,12.3 39.5,12.3 39.5,11.7 39.4,11.7 "/>
+<polygon style="fill:#E6E6E6;" points="40.3,11.5 40.1,11.7 40.1,11.7 40.1,12.3 40.1,12.3 40.4,12.3 40.5,12.3 40.5,11.7 
+	40.5,11.7 "/>
+<polygon style="fill:#E6E6E6;" points="41.5,11.7 41.3,11.5 41.1,11.7 41.1,11.7 41.1,12.3 41.1,12.3 41.5,12.3 41.5,12.3 
+	41.5,11.7 "/>
+<path style="fill:#F6F5F5;" d="M38.9,8.3c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1v1.1h0.3V8.3z"/>
+<path style="fill:#F6F5F5;" d="M39.4,8.3c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1v1.1h0.3V8.3z"/>
+<path style="fill:#F6F5F5;" d="M39.9,8.3c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1v1.1h0.3V8.3z"/>
+<path style="fill:#F6F5F5;" d="M40.4,8.3c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1v1.1h0.3V8.3z"/>
+<path style="fill:#F6F5F5;" d="M40.9,8.3c0-0.1-0.1-0.1-0.2-0.1c-0.1,0-0.2,0.1-0.2,0.1v1.1h0.3V8.3z"/>
+<path style="fill:#B6A68C;" d="M35.5,15.1v-0.8h-0.1v-0.4h-0.1c0-0.1,0-0.1,0-0.2v-0.4h-0.1V13H35v-0.3h-0.1c0-0.2-0.1-0.4-0.1-0.6
+	V11h0v1.1c0,0.2-0.1,0.4-0.1,0.6h-0.1V13h-0.1v0.3h-0.1v0.4c0,0.1,0,0.1,0,0.2h-0.1v0.4H34v0.8h0v0.3v0.1v1.6v0.1v0.9L33.2,16v-0.6
+	c0,0,0,0,0,0c0,0,0,0,0,0v0.6h-1.4v-0.2h0v-0.2h-0.1v-0.1h-0.1c0-0.1,0-0.2-0.1-0.3v-0.5h0v0.5c0,0.1,0,0.2-0.1,0.3h-0.1v0.1h-0.1
+	v0.2h0v0.2h-1.4v-0.6c0,0,0,0,0,0c0,0,0,0,0,0V16l-0.9,2.2v-0.5h0v-0.1h0v-0.3v-0.1v-1.6v-0.1h0v-0.1h0v-0.2H29v-0.8h-0.1v-0.4h-0.1
+	c0-0.1,0-0.1,0-0.2v-0.4h-0.1V13h-0.1v-0.3h-0.1c0-0.2-0.1-0.4-0.1-0.6v-1.1h0v1.1c0,0.2-0.1,0.4-0.1,0.6h-0.1V13h-0.1v0.3h-0.1v0.4
+	c0,0.1,0,0.1,0,0.2h-0.1v0.4h-0.1v0.8h0v0.3v0.1v1.6v0.1V20h0v0.5v0.2v3.8h-1.1v-0.3h-0.3L25.8,24l-0.2-0.7L25.4,24l-0.2,0.2h-0.3
+	v0.3h-0.3h-0.1h0v-1.1v0v-0.7v-0.1v-0.1h0v-0.3h-0.1V22h0c0,0,0-0.1,0-0.1v-0.2h0v-0.2h-0.1v-0.1h-0.1c0-0.1-0.1-0.2-0.1-0.3v-0.5h0
+	v0.5c0,0.1,0,0.2-0.1,0.3H24v0.1h-0.1v0.2h0v0.2c0,0,0,0.1,0,0.1h0v0.2h-0.1v0.3h0v0.1v0v0.7v0v1.1h-0.1h-0.3v-0.3h-0.1H23L22.8,24
+	l-0.2-0.7l0,0.1l0-0.1L22.3,24l-0.2,0.2h-0.2h-0.1v0.3h-0.3h-0.1v-1.1v0v-0.7v-0.1v-0.1h0v-0.3h-0.1V22h0c0,0,0-0.1,0-0.1v-0.2h0
+	v-0.2h-0.1v-0.1h-0.1c0-0.1-0.1-0.2-0.1-0.3v-0.5h0v0.5c0,0.1,0,0.2-0.1,0.3h-0.1v0.1h-0.1v0.2h0v0.2c0,0,0,0.1,0,0.1h0v0.2h-0.1
+	v0.3h0v0.1v0v0.7v0v1.1h0h-0.1h-0.3v-0.3h-0.3L19.7,24l-0.2-0.7L19.3,24L19,24.2h-0.3v0.3h-1.1v-3.8v-0.2V20h0v-2.3h0v-0.1h0v-0.3
+	v-0.1v-1.6v-0.1h0v-0.1h0v-0.2h0.1v-0.8h-0.1v-0.4h-0.1c0-0.1,0-0.1,0-0.2v-0.4h-0.1V13h-0.1v-0.3h-0.1c0-0.2-0.1-0.4-0.1-0.6V11h0
+	v1.1c0,0.2-0.1,0.4-0.1,0.6h-0.1V13h-0.1v0.3h-0.1v0.4c0,0.1,0,0.1,0,0.2h-0.1v0.4h-0.1v0.8h0v0.3v0.1v1.6v0.1v0.9L15.4,16v-0.6
+	c0,0,0,0,0,0c0,0,0,0,0,0v0.6h-1.4v-0.2h0v-0.2h-0.1v-0.1h-0.1c0-0.1,0-0.2-0.1-0.3v-0.5h0v0.5c0,0.1,0,0.2-0.1,0.3h-0.1v0.1h-0.1
+	v0.2h0v0.2h-1.4v-0.6c0,0,0,0,0,0s0,0,0,0V16l-0.9,2.2v-0.5h0v-0.1h0v-0.3v-0.1v-1.6v-0.1h0v-0.1h0v-0.2h0.1v-0.8H11v-0.4h-0.1
+	c0-0.1,0-0.1,0-0.2v-0.4h-0.1V13h-0.1v-0.3h-0.1c0-0.2-0.1-0.4-0.1-0.6v-1.1h0v1.1c0,0.2-0.1,0.4-0.1,0.6h-0.1V13H10v0.3H9.9v0.4
+	c0,0.1,0,0.1,0,0.2H9.8v0.4H9.6v0.8h0v0.3v0.1v1.6v0.1V20h0v0.5v0.2v3.8H8.8v-0.3H8.6L8.3,24l-0.2-0.7L7.9,24l-0.2,0.2H7.4v0.3H7.1
+	H7h0v-1.1v0v-0.7v-0.1v-0.1h0v-0.3H6.9V22h0c0,0,0-0.1,0-0.1v-0.2h0v-0.2H6.7v-0.1H6.7c0-0.1-0.1-0.2-0.1-0.3v-0.5h0v0.5
+	c0,0.1,0,0.2-0.1,0.3H6.5v0.1H6.4v0.2h0v0.2c0,0,0,0.1,0,0.1h0v0.2H6.2v0.3h0v0.1v0v0.7v0v1.1H6.1H5.8v-0.3H5.7H5.5L5.3,24l-0.2-0.7
+	l0,0.1l0-0.1L4.8,24l-0.2,0.2H4.4H4.3v0.3H4H3.9v-1.1v0v-0.7v-0.1v-0.1h0v-0.3H3.8V22h0c0,0,0-0.1,0-0.1v-0.2h0v-0.2H3.6v-0.1H3.6
+	c0-0.1-0.1-0.2-0.1-0.3v-0.5h0v0.5c0,0.1,0,0.2-0.1,0.3H3.4v0.1H3.3v0.2h0v0.2c0,0,0,0.1,0,0.1h0v0.2H3.1v0.3h0v0.1v0v0.7v0v1.1h0H3
+	H2.7v-0.3H2.4L2.2,24L2,23.3L1.8,24l-0.2,0.2H1.3v0.3H0v1.1v0v0.2V27v0.2v4.9v0.2v1.2v0.2v4.5v0.3V42h9.6h0.5h7.4h0.2h9.7h0.2h7.9
+	v-3.3v-0.3v-4.5v-0.2v-1.2v-0.2v-4.9V27v-1.2v-0.2v-4.9v-0.2V20h0v-2.3h0v-0.1h0v-0.3v-0.1v-1.6v-0.1h0v-0.1h0L35.5,15.1L35.5,15.1z
+	"/>
+<path style="fill:#F6F5F5;" d="M3.9,40.5c0-0.2-0.1-0.3-0.3-0.3c-0.1,0-0.3,0.1-0.3,0.3v0.7h0.5V40.5z"/>
+<path style="fill:#F6F5F5;" d="M6.8,40.5c0-0.2-0.1-0.3-0.3-0.3c-0.1,0-0.3,0.1-0.3,0.3v0.7h0.5V40.5z"/>
+<rect x="2.6" y="34.1" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="2.6" y="36.2" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="3.4" y="34.1" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="3.4" y="36.2" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="6.3" y="34.1" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="6.3" y="36.2" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="7.1" y="34.1" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="7.1" y="36.2" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="2.6" y="27.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="2.6" y="29.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="3.4" y="27.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="3.4" y="29.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="6.3" y="27.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="6.3" y="29.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="7.1" y="27.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="7.1" y="29.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<path style="fill:#F6F5F5;" d="M21.4,40.5c0-0.2-0.1-0.3-0.3-0.3c-0.1,0-0.3,0.1-0.3,0.3v0.7h0.5V40.5z"/>
+<path style="fill:#F6F5F5;" d="M24.2,40.5c0-0.2-0.1-0.3-0.3-0.3s-0.3,0.1-0.3,0.3v0.7h0.5V40.5z"/>
+<rect x="20.1" y="34.1" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="20.1" y="36.2" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="20.9" y="34.1" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="20.9" y="36.2" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="23.8" y="34.1" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="23.8" y="36.2" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="24.6" y="34.1" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="24.6" y="36.2" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="20.1" y="27.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="20.1" y="29.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="20.9" y="27.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="20.9" y="29.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="23.8" y="27.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="23.8" y="29.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="24.6" y="27.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<rect x="24.6" y="29.9" style="fill:#F6F5F5;" width="0.4" height="1.8"/>
+<path style="fill:#F6F5F5;" d="M12.7,40.5c0-0.2-0.1-0.3-0.2-0.3c-0.1,0-0.2,0.1-0.2,0.3v0.7h0.4V40.5z"/>
+<path style="fill:#F6F5F5;" d="M15,40.5c0-0.2-0.1-0.3-0.2-0.3c-0.1,0-0.2,0.1-0.2,0.3v0.7H15V40.5z"/>
+<rect x="12.2" y="34.1" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="12.2" y="36.2" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="12.9" y="34.1" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="12.9" y="36.2" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="13.5" y="34.1" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="13.5" y="36.2" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="14.1" y="34.1" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="14.1" y="36.2" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="14.8" y="34.1" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="14.8" y="36.2" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="12.2" y="27.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="12.2" y="29.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="12.9" y="27.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="12.9" y="29.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="13.5" y="27.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="13.5" y="29.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="14.1" y="27.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="14.1" y="29.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="14.8" y="27.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="14.8" y="29.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<path style="fill:#F6F5F5;" d="M14.5,21.9c0-0.4-0.3-0.7-0.7-0.7h-0.3c-0.4,0-0.7,0.3-0.7,0.7v2.3h1.8V21.9z"/>
+<path style="fill:#F6F5F5;" d="M30.5,40.5c0-0.2-0.1-0.3-0.2-0.3c-0.1,0-0.2,0.1-0.2,0.3v0.7h0.4V40.5z"/>
+<path style="fill:#F6F5F5;" d="M32.8,40.5c0-0.2-0.1-0.3-0.2-0.3c-0.1,0-0.2,0.1-0.2,0.3v0.7h0.4V40.5z"/>
+<rect x="30" y="34.1" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="30" y="36.2" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="30.7" y="34.1" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="30.7" y="36.2" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="31.3" y="34.1" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="31.3" y="36.2" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="32" y="34.1" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="32" y="36.2" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="32.6" y="34.1" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="32.6" y="36.2" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="30" y="27.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="30" y="29.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="30.7" y="27.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="30.7" y="29.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="31.3" y="27.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="31.3" y="29.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="32" y="27.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="32" y="29.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="32.6" y="27.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<rect x="32.6" y="29.8" style="fill:#F6F5F5;" width="0.3" height="1.8"/>
+<path style="fill:#F6F5F5;" d="M32.4,21.9c0-0.4-0.3-0.7-0.7-0.7h-0.3c-0.4,0-0.7,0.3-0.7,0.7v2.3h1.8V21.9z"/>
+<path style="fill:#F6F5F5;" d="M10.1,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V13.9z"/>
+<path style="fill:#F6F5F5;" d="M10.4,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V13.9z"/>
+<path style="fill:#F6F5F5;" d="M10.8,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V13.9z"/>
+<path style="fill:#F6F5F5;" d="M10.1,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V15.7z"/>
+<path style="fill:#F6F5F5;" d="M10.4,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V15.7z"/>
+<path style="fill:#F6F5F5;" d="M10.8,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V15.7z"/>
+<path style="fill:#F6F5F5;" d="M16.7,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V13.9z"/>
+<path style="fill:#F6F5F5;" d="M17,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2H17V13.9z"/>
+<path style="fill:#F6F5F5;" d="M17.3,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V13.9z"/>
+<path style="fill:#F6F5F5;" d="M16.7,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V15.7z"/>
+<path style="fill:#F6F5F5;" d="M17,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2H17V15.7z"/>
+<path style="fill:#F6F5F5;" d="M17.3,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V15.7z"/>
+<path style="fill:#F6F5F5;" d="M28,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2H28V13.9z"/>
+<path style="fill:#F6F5F5;" d="M28.3,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V13.9z"/>
+<path style="fill:#F6F5F5;" d="M28.6,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V13.9z"/>
+<path style="fill:#F6F5F5;" d="M28,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2H28V15.7z"/>
+<path style="fill:#F6F5F5;" d="M28.3,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V15.7z"/>
+<path style="fill:#F6F5F5;" d="M28.6,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V15.7z"/>
+<path style="fill:#F6F5F5;" d="M34.5,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V13.9z"/>
+<path style="fill:#F6F5F5;" d="M34.8,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V13.9z"/>
+<path style="fill:#F6F5F5;" d="M35.1,13.9c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V13.9z"/>
+<path style="fill:#F6F5F5;" d="M34.5,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V15.7z"/>
+<path style="fill:#F6F5F5;" d="M34.8,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V15.7z"/>
+<path style="fill:#F6F5F5;" d="M35.1,15.7c0-0.1,0-0.1-0.1-0.1c0,0-0.1,0.1-0.1,0.1v1.2h0.1V15.7z"/>
+</symbol><symbol id="sprite-lyon" viewBox="0 0 68.1 98.9">
+<path style="fill:#B6A68C;" d="M68.1,55.2v-1.4h-0.9V42.6l0.3-0.4l0.4-3.1l0.1-0.8l0.2-1.6L67.5,37l-0.2-0.5h-0.5l-0.3-0.4l-0.5,0.2
+	l-0.6-0.5l-0.2,0.3h-0.7l-0.3-0.3L63.9,36l-0.2-3.9c0.7-0.1,1.2-0.4,1.2-0.6c0-0.3-0.5-0.5-1.2-0.7l-0.5-8.6H63v-1.8h1.2v-0.4H63
+	v-1.2h-0.3v1.2h-1.2v0.4h1.2v1.8h-0.2L62,30.8c-0.7,0.1-1.2,0.4-1.2,0.7c0,0.3,0.5,0.5,1.2,0.6L61.7,36l-0.4-0.2L61,36.1h-0.7
+	l-0.2-0.3l-0.6,0.5L59,36.1l-0.3,0.4h-0.5L58.1,37l-0.6-0.2l0.2,1.6l0.1,0.8l0.4,3.1l0.3,0.4v11.3h-0.9v1.4v0.2l-8.7-7.5v-2.1V44
+	h-1.2V29.9l0.4-0.5l0.5-3.9l0.1-0.9l0.2-2l-0.8,0.3l-0.2-0.7h-0.6l-0.3-0.5L46.3,22l-0.8-0.7l-0.3,0.4h-0.8l-0.4-0.4l-0.3,0.2
+	l-0.4-3.8l0.4-0.4l-0.8-1h-0.3v-1.9H43L42.4,2.8h-0.1V1.3h1V0.9h-1V0H42v0.9h-1v0.4h1v1.5h-0.1l-0.6,11.7h0.4v1.9h-0.3l-0.8,1
+	l0.4,0.4l-0.4,3.8l-0.3-0.2l-0.4,0.4h-0.8l-0.3-0.4L38,22l-0.7-0.3L37,22.2h-0.6l-0.2,0.7l-0.8-0.3l0.2,2l0.1,0.9l0.5,3.9l0.4,0.5
+	v5.7h-2.2l-3.1-2l0-0.9c0.6-0.1,1-0.3,1-0.6c0-0.3-0.4-0.5-1.1-0.6l-0.4-7.4h-0.1v-1.6h1v-0.4h-1v-1h-0.3v1h-1v0.4h1v1.6h-0.1
+	l-0.4,7.4c-0.5,0.1-0.9,0.2-1,0.4l-2.4-1.5v-1.4h-2.2c0.2-0.2,1-1.1,0.4-1.5c0,0,0.9-1.6-0.1-1.5l-0.3,0v-1.8c0,0,0.7,0.4,0.4-2.8
+	c0,0,0.9-0.2,1-2.4l-1.1,1.3c0,0,0.2-0.5-0.4-0.5c-0.6,0-0.4,0.5-0.4,0.5l-1.1-1.3c0.1,2.2,1,2.4,1,2.4c-0.2,3.2,0.4,2.8,0.4,2.8
+	v1.8l-0.3,0c-1-0.1-0.1,1.5-0.1,1.5c-0.6,0.4,0.2,1.3,0.4,1.5h-2.2v1.4l-8,5h-1.5v-5.7l0.4-0.5l0.5-3.9l0.1-0.9l0.2-2l-0.8,0.3
+	l-0.2-0.7h-0.6l-0.3-0.5L10.8,22l-0.8-0.7l-0.3,0.4H8.9l-0.4-0.4l-0.3,0.2l-0.4-3.8l0.4-0.4l-0.8-1H7.2v-1.9h0.4L7,2.8H6.8V1.3h1
+	V0.9h-1V0H6.6v0.9h-1v0.4h1v1.5H6.4L5.8,14.4h0.4v1.9H5.9l-0.8,1l0.4,0.4l-0.4,3.8l-0.3-0.2l-0.4,0.4H3.6l-0.3-0.4L2.6,22l-0.7-0.3
+	l-0.3,0.5H1l-0.2,0.7L0,22.6l0.2,2l0.1,0.9l0.5,3.9l0.4,0.5V44H0v1.7v45.5v0.9v6.8h68.1v-7.7h0V55.2z"/>
+<path style="fill:#F6F5F5;" d="M7.7,52.2c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1C7.2,51.2,7.7,51.7,7.7,52.2z"/>
+<path style="fill:#F6F5F5;" d="M7.7,63.4c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1C7.2,62.4,7.7,62.9,7.7,63.4z"/>
+<path style="fill:#F6F5F5;" d="M7.7,74.7c0,0.5-0.4,1-1,1c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1C7.2,73.7,7.7,74.2,7.7,74.7z"/>
+<path style="fill:#F6F5F5;" d="M6.5,80.7c0-0.3-0.2-0.5-0.5-0.5c-0.3,0-0.5,0.2-0.5,0.5v2.7h1.1V80.7z"/>
+<path style="fill:#F6F5F5;" d="M8,80.7c0-0.3-0.2-0.5-0.5-0.5c-0.3,0-0.5,0.2-0.5,0.5v2.7H8V80.7z"/>
+<path style="fill:#F6F5F5;" d="M8.2,30.1c0-0.8-0.7-1.5-1.5-1.5c-0.8,0-1.5,0.7-1.5,1.5v10.7h3V30.1z"/>
+<path style="fill:#F6F5F5;" d="M11.4,30.1c0-0.8-0.4-1.5-0.9-1.5c-0.5,0-0.9,0.7-0.9,1.5v10.7h1.8V30.1z"/>
+<path style="fill:#F6F5F5;" d="M3.7,30.1c0-0.8-0.4-1.5-0.9-1.5c-0.5,0-0.9,0.7-0.9,1.5v10.7h1.8V30.1z"/>
+<circle style="fill:#C5C6C8;" cx="42.1" cy="52.2" r="1"/>
+<circle style="fill:#C5C6C8;" cx="42.1" cy="63.4" r="1"/>
+<circle style="fill:#C5C6C8;" cx="42.1" cy="74.7" r="1"/>
+<path style="fill:#C5C6C8;" d="M41.9,80.7c0-0.3-0.2-0.5-0.5-0.5c-0.3,0-0.5,0.2-0.5,0.5v2.7h1.1V80.7z"/>
+<path style="fill:#C5C6C8;" d="M43.4,80.7c0-0.3-0.2-0.5-0.5-0.5c-0.3,0-0.5,0.2-0.5,0.5v2.7h1.1V80.7z"/>
+<path style="fill:#F6F5F5;" d="M43.6,30.1c0-0.8-0.7-1.5-1.5-1.5c-0.8,0-1.5,0.7-1.5,1.5v10.7h3V30.1z"/>
+<path style="fill:#F6F5F5;" d="M46.9,30.1c0-0.8-0.4-1.5-0.9-1.5c-0.5,0-0.9,0.7-0.9,1.5v10.7h1.8V30.1z"/>
+<path style="fill:#F6F5F5;" d="M39.2,30.1c0-0.8-0.4-1.5-0.9-1.5c-0.5,0-0.9,0.7-0.9,1.5v10.7h1.8V30.1z"/>
+<circle style="fill:#C5C6C8;" cx="62.8" cy="60.4" r="0.8"/>
+<circle style="fill:#C5C6C8;" cx="62.8" cy="69.3" r="0.8"/>
+<circle style="fill:#C5C6C8;" cx="62.8" cy="78.2" r="0.8"/>
+<path style="fill:#C5C6C8;" d="M62.6,83c0-0.2-0.2-0.4-0.4-0.4c-0.2,0-0.4,0.2-0.4,0.4v2.2h0.8V83z"/>
+<path style="fill:#C5C6C8;" d="M63.8,83c0-0.2-0.2-0.4-0.4-0.4c-0.2,0-0.4,0.2-0.4,0.4v2.2h0.8V83z"/>
+<path style="fill:#F6F5F5;" d="M64,42.8c0-0.7-0.5-1.2-1.2-1.2c-0.7,0-1.2,0.5-1.2,1.2v8.5H64V42.8z"/>
+<path style="fill:#F6F5F5;" d="M66.6,42.8c0-0.7-0.3-1.2-0.7-1.2c-0.4,0-0.7,0.5-0.7,1.2v8.5h1.4V42.8z"/>
+<path style="fill:#F6F5F5;" d="M60.5,42.8c0-0.7-0.3-1.2-0.7-1.2c-0.4,0-0.7,0.5-0.7,1.2v8.5h1.4V42.8z"/>
+<path style="fill:#F6F5F5;" d="M32.3,81c0-0.4-0.3-0.8-0.8-0.8c-0.4,0-0.8,0.3-0.8,0.8v3.6h1.5V81z"/>
+<path style="fill:#F6F5F5;" d="M34.2,81c0-0.4-0.3-0.8-0.8-0.8c-0.4,0-0.8,0.3-0.8,0.8v3.6h1.5V81z"/>
+<path style="fill:#F6F5F5;" d="M36.2,81c0-0.4-0.3-0.8-0.8-0.8c-0.4,0-0.8,0.3-0.8,0.8v3.6h1.5V81z"/>
+<path style="fill:#F6F5F5;" d="M38.1,81c0-0.4-0.3-0.8-0.8-0.8c-0.4,0-0.8,0.3-0.8,0.8v3.6h1.5V81z"/>
+<path style="fill:#F6F5F5;" d="M15.8,81.6c0-0.4,0.3-0.8,0.8-0.8c0.4,0,0.8,0.3,0.8,0.8v3.6h-1.5V81.6z"/>
+<path style="fill:#F6F5F5;" d="M13.9,81.6c0-0.4,0.3-0.8,0.8-0.8c0.4,0,0.8,0.3,0.8,0.8v3.6h-1.5V81.6z"/>
+<path style="fill:#F6F5F5;" d="M11.9,81.6c0-0.4,0.3-0.8,0.8-0.8c0.4,0,0.8,0.3,0.8,0.8v3.6h-1.5V81.6z"/>
+<path style="fill:#F6F5F5;" d="M9.9,81.6c0-0.4,0.3-0.8,0.8-0.8c0.4,0,0.8,0.3,0.8,0.8v3.6H9.9V81.6z"/>
+<path style="fill:#F6F5F5;" d="M25.1,79.4c0-0.6-0.5-1.1-1.1-1.1c-0.6,0-1.1,0.5-1.1,1.1v5.2h2.2V79.4z"/>
+<path style="fill:#F6F5F5;" d="M27.7,81c0-0.4-0.3-0.8-0.7-0.8c-0.4,0-0.8,0.3-0.8,0.8v3.6h1.5V81z"/>
+<path style="fill:#F6F5F5;" d="M21.8,81c0-0.4-0.3-0.8-0.8-0.8c-0.4,0-0.8,0.3-0.8,0.8v3.6h1.5V81z"/>
+<path style="fill:#F6F5F5;" d="M25.4,44.7c0-0.8-0.6-1.5-1.4-1.5c-0.8,0-1.4,0.7-1.4,1.5v18.9h2.8V44.7z"/>
+<path style="fill:#F6F5F5;" d="M20.4,44.7c0-0.8-0.6-1.5-1.4-1.5c-0.8,0-1.4,0.7-1.4,1.5v18.9h2.8V44.7z"/>
+<path style="fill:#F6F5F5;" d="M15.3,44.7c0-0.8-0.6-1.5-1.4-1.5c-0.8,0-1.4,0.7-1.4,1.5v18.9h2.8V44.7z"/>
+<path style="fill:#F6F5F5;" d="M35.5,44.7c0-0.8-0.6-1.5-1.4-1.5c-0.8,0-1.4,0.7-1.4,1.5v18.9h2.8V44.7z"/>
+<path style="fill:#F6F5F5;" d="M30.5,44.7c0-0.8-0.6-1.5-1.4-1.5c-0.8,0-1.4,0.7-1.4,1.5v18.9h2.8V44.7z"/>
+<path style="fill:#F6F5F5;" d="M24,91.9c-1.1,0-2.1,2.9-2.4,6.8h4.7C26.1,94.8,25.2,91.9,24,91.9z"/>
+</symbol><symbol id="sprite-mail" viewBox="-691 435 40 32">
+<style type="text/css">
+	.st0{fill:none;}
+</style>
+<path d="M-655,435h-32c-2.2,0-4,1.8-4,4l0,24c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4v-24C-651,436.8-652.8,435-655,435z M-655,443
+	l-16,10l-16-10v-4l16,10l16-10V443z"/>
+<path class="st0" d="M-695,427h48v48h-48V427z"/>
+</symbol><symbol id="sprite-mouse" viewBox="-645.1 396.9 51.2 82.4">
+<path d="M-617.3,396.9h-4.2c-13.2,1.1-23.5,12.1-23.5,25.4v31.3c0,14.1,11.5,25.6,25.6,25.6c14.1,0,25.6-11.5,25.6-25.6v-31.3
+	C-593.8,409.1-604.1,398-617.3,396.9z M-598.1,453.7c0,11.8-9.6,21.4-21.4,21.4c-11.8,0-21.4-9.6-21.4-21.4v-31.3
+	c0-11.8,9.6-21.4,21.4-21.4c11.8,0,21.4,9.6,21.4,21.4V453.7z"/>
+<path d="M-619.5,418.6c-1.9,0-3.4,1.5-3.4,3.4v8.9c0,1.9,1.5,3.4,3.4,3.4c1.9,0,3.4-1.5,3.4-3.4v-8.9
+	C-616,420.2-617.6,418.6-619.5,418.6z"/>
+</symbol><symbol id="sprite-pinterest" viewBox="-219 -50 1000 1000">
+<path d="M-219,450c2.6-141.9,52.7-260.4,150.4-355.4S145.6-48.7,281-50C426.8-47.4,546.3,2.4,639.3,99.4S779.6,313.3,780.9,450
+	c-2.6,140.6-52.7,258.8-150.4,354.5S416.4,948.6,281,949.9c-46.9,0-93.7-7.2-140.6-21.5c9.1-14.3,18.2-30.6,27.3-48.8
+	c10.4-22.1,23.4-63.8,39.1-125c3.9-16.9,9.8-39.7,17.6-68.4c9.1,15.6,24.7,29.9,46.9,43c58.6,27.3,120.4,24.7,185.5-7.8
+	c67.7-39.1,114.6-99.6,140.6-181.6c23.4-85.9,20.5-165.7-8.8-239.2c-29.3-73.6-81.7-126.6-157.2-159.2
+	c-95-27.3-187.5-24.4-277.3,8.8S1.7,240.3-33.5,321.1c-9.1,29.9-14.6,59.6-16.6,88.9c-2,29.3-1,57.9,2.9,85.9s13.7,53.1,29.3,75.2
+	s36.5,39.1,62.5,50.8c6.5,2.6,11.7,2.6,15.6,0c5.2-2.6,10.4-13,15.6-31.2s7.2-30.6,5.9-37.1c-1.3-2.6-3.9-7.2-7.8-13.7
+	C46.6,495.5,37.5,449,46.6,400.2c9.1-48.8,29.3-90.2,60.5-124c48.2-43,104.5-66.4,168.9-70.3c64.4-3.9,119.5,13.7,165,52.7
+	c24.7,28.6,40.7,63.1,47.8,103.5c7.2,40.4,7.2,79.1,0,116.2c-7.2,37.1-19.9,71.9-38.1,104.5c-32.6,50.8-71,76.8-115.2,78.1
+	c-26-1.3-47.2-11.4-63.5-30.3s-21.2-40.7-14.6-65.4c2.6-14.3,10.4-42.3,23.4-84c13-41.7,20.2-72.9,21.5-93.7
+	c-3.9-49.5-26.7-74.9-68.4-76.2c-32.6,3.9-56.6,18.6-72.3,43.9s-24.1,54.4-25.4,86.9c3.9,37.8,9.8,63.8,17.6,78.1
+	c-14.3,58.6-25.4,105.5-33.2,140.6c-2.6,9.1-9.8,37.1-21.5,84c-11.7,46.9-18.2,82.7-19.5,107.4V907
+	c-92.4-43-165.4-105.1-218.7-186.5S-219,548.9-219,450L-219,450z"/>
+</symbol><symbol id="sprite-twitter" viewBox="-905.6 764.4 79.5 65.4">
+<path d="M-826.4,772.3c-1-1.3-3.3-0.2-4.6,0c0.4-0.9,0.7-1.8,0.9-2.7c0.2-0.9,0.8-2.1,0.7-3c-0.1-0.8-0.7-1.5-1.6-1.5
+	c-0.8,0-1.7,0.8-2.5,1.2c-1.5,0.8-3,1.4-4.5,2c-0.9,0.3-1.8,0.5-2.7,0.7c-0.6,0.1-0.7,0.1-1.2-0.3c-0.4-0.4-0.9-0.7-1.3-1
+	c-6.6-4.7-17-4.1-22.5,2.1c-3,3.4-4.5,7.7-4.5,12.2c-1.3-0.1-2.7-0.8-3.9-1.2c-1.8-0.6-3.5-1.3-5.3-2c-3.3-1.3-6.2-3-8.9-5.2
+	c-1.4-1.2-2.8-2.5-4-3.9c-0.6-0.7-1.2-1.4-1.7-2.1c-0.5-0.7-0.9-1.6-1.7-2c-1.6-0.8-3,1.5-3.9,2.6c-1,1.4-1.8,2.9-2.1,4.6
+	c-0.8,3.8-0.8,8.4,0.8,12c-1.6,0.2-1.5,2.2-1.5,3.5c0,1.6,0.2,3.1,0.6,4.6c0.6,2.7,1.8,5.2,3.6,7.2c0.2,0.2,0.4,0.4,0.6,0.6
+	c0.3,0.4,0.2,0.7,0.2,1.2c0,0.8,0.2,1.6,0.4,2.3c0.4,1.4,1.1,2.8,2,4c1.9,2.6,4.5,4.4,7.4,5.7c-4.2,1.4-8.2,1.6-12.6,1.5
+	c-1.4,0-5.2-0.9-5.4,1.3c-0.1,0.9,0.5,2,1,2.8c0.5,0.9,1.2,1.8,1.9,2.6c3,3.1,7.1,5,11.2,6.1c4.5,1.3,9.3,1.8,14,1.7
+	c9.1-0.3,18.3-3.2,25.7-8.5c7.2-5.3,11.9-12.6,14.9-20.8c1-2.6,1.8-5.3,2.3-8.1c0.2-1.4,0.4-2.8,0.4-4.1c0-0.6,0-1.2-0.1-1.8
+	c0-0.4-0.1-0.7-0.1-1.1c-0.1-0.5-0.2-0.5,0.2-0.9c0.8-0.9,2-1.6,2.9-2.4c0.9-0.8,1.7-1.7,2.4-2.7c0.7-1,1.3-2.1,1.8-3.2
+	C-826.6,774.9-825.7,773.5-826.4,772.3C-826.7,771.9-826.1,772.8-826.4,772.3z"/>
+</symbol><symbol id="sprite-viadeo" viewBox="-280 -50 879 1000">
+<path d="M-280,583c0,169.3,118.1,329.7,288,360.7c79,14.4,165.1,6.1,237.1-30.7c73.4-37.5,133.4-104.8,166.1-180.1
+	C451.1,640.7,451,530.1,414,437c-26.1,16.3-54.9,28-85,34c40.6,94.1,25.1,211.2-37.7,291.9c-61.5,79-165.3,114.7-263,96.4
+	C-72,840.4-151.1,762.6-179,665.4c-26.5-92.6-5.3-194.7,56.5-268.4c73.6-87.7,194.1-121.4,301.4-78c3.1-30.1,13.8-59,27-86
+	c-109.8-40.4-241.8-23.9-335.8,46.3C-225.7,350.9-280,463.9-280,583z M0,836c16.4,1.2,34.8,5.2,51.1,3.7
+	c11.6-1.1,21.1-10.2,30.7-17.1c17.3-12.3,33.9-25.6,49.6-39.9c59.8-54.4,105.4-122.6,129.5-199.8c43.8-140.3,31.9-286.4-13.5-424.4
+	C225.9,92.6,202.8,24.4,165-34c58,29.7,97.1,79,95,146.1c-0.4,12.6-2.2,24.9-6.4,36.9c-4.8,13.9-3.8,23.7-2.9,38.9
+	c2.2,38.2,4,76.5,2.9,114.7c-3.9,140.1-31.9,284.8-109.4,404.1C110,759.3,58,810.6,0,836z M275,199c3.3-33.4,18.2-59.1,38.2-85.1
+	c20.9-27.1,59.8-40,91.5-49.4c34.4-10.2,64.1-20.4,91.2-45.4c22-20.3,36.6-43.4,51.1-69.1c59.2,82.3,64.2,193.7,35.4,288.5
+	c-13.2,43.3-45.8,82.8-83,107.8c-17,11.4-48.2,26.4-69.5,21.6c-8.7-1.9-18.2-8.8-26.1-12.7c-27.6-13.4-55.2-26.8-82.8-40.3
+	c50.8-28,100.3-60.2,142.8-99.9c30.4-28.5,62.9-66.3,71.2-108.1c-32.3,71.8-93,119.6-162.2,153.3c-14.6,7.1-29.5,13.9-44.9,19.2
+	c-5.9,2.1-19.9,8.7-26.1,7.7c-9.4-1.5-17.2-28-20.6-37.9C276,233.8,271.7,215.4,275,199C277.7,172.3,274.3,202.3,275,199z"/>
+</symbol></svg>
+</div>    <nav id="nav">
+  <div id="nav-overlay"></div>
+
+  <div id="nav-bar">
+    <button id="nav-toggle"><span></span></button>
+    <div id="nav-bar-page-title">Servo SIP</div>
+    <div id="nav-bar-menu-title">Menu</div>
+  </div>
+
+  <a id="nav-logo" href="../index.html">
+    <span id="nav-logo-name">IRCA India</span>
+  </a>
+
+  <div id="nav-items">
+    
+    
+    <ul id="nav-pages">
+                      <li class="nav-pages-item " id="nav-pages-item-home" data-id="home">
+                              <a class="nav-pages-btn" id="nav-pages-btn-home" href="../en/index.html">
+            <span class="nav-pages-btn-label">Exoskills</span>
+          </a>
+                  </li>
+                      <li class="nav-pages-item active" id="nav-pages-item-work" data-id="work">
+                              <div class="nav-pages-btn" id="nav-pages-btn-work">
+            <span class="nav-pages-btn-label">Products</span>
+              <ul id="nav-latest-works">
+                                                  <li class="nav-latest-work active" id="nav-latest-work-renault-integrity" data-id="renault-integrity">
+                    <a class="nav-latest-work-btn" href="ims.html">
+                      <div class="nav-latest-work-btn-inner">
+                        <div class="nav-latest-work-title">
+                          <span class="nav-latest-work-title-line nav-latest-work-title-line-1">IMS</span>
+                        </div>
+                        <div class="nav-latest-work-desc">Incident Management System..</div>
+						<div class="nav-latest-work-desc" style="top: 80px;">View case study</div>
+                      </div>
+                    </a>
+                  </li>
+                                  <li class="nav-latest-work " id="nav-latest-work-cic" data-id="cic">
+                    <a class="nav-latest-work-btn" href="eclub.html">
+                      <div class="nav-latest-work-btn-inner">
+                        <div class="nav-latest-work-title">
+                          <span class="nav-latest-work-title-line nav-latest-work-title-line-1" style="text-transform: none">eClub</span>
+                        </div>
+                        <div class="nav-latest-work-desc">Club Management Software..</div>
+						<div class="nav-latest-work-desc" style="top: 80px;">View case study</div>
+                      </div>
+                    </a>
+                  </li>
+                                  <li class="nav-latest-work " id="nav-latest-work-engie-digital-design" data-id="engie-digital-design">
+                    <a class="nav-latest-work-btn" href="#">
+                      <div class="nav-latest-work-btn-inner">
+                        <div class="nav-latest-work-title">
+                          <span class="nav-latest-work-title-line nav-latest-work-title-line-1" style="text-transform: none">SIP</span>
+                        </div>
+                        <div class="nav-latest-work-desc">Systematic Inventory Planning..</div>
+						<div class="nav-latest-work-desc" style="top: 80px;">View case study</div>
+                      </div>
+                    </a>
+                  </li>
+                                  <li class="nav-latest-work " id="nav-latest-work-shopping-robot" data-id="shopping-robot">
+                    <a class="nav-latest-work-btn" href="#">
+                      <div class="nav-latest-work-btn-inner">
+                        <div class="nav-latest-work-title">
+                          <span class="nav-latest-work-title-line nav-latest-work-title-line-1" style="text-transform: none">HRcubes</span>
+                        </div>
+                        <div class="nav-latest-work-desc">HR Management System..</div>
+						<div class="nav-latest-work-desc" style="top: 80px;">View case study</div>
+                      </div>
+                    </a>
+                  </li>
+                              </ul>
+          </div>
+                  </li>
+                      <li class="nav-pages-item " id="nav-pages-item-about" data-id="about">
+                              <a class="nav-pages-btn" id="nav-pages-btn-about" href="#">
+            <span class="nav-pages-btn-label">Services</span>
+          </a>
+                  </li>
+				  <li class="nav-pages-item " id="nav-pages-item-about" data-id="about">
+                              <a class="nav-pages-btn" id="nav-pages-btn-about" href="#">
+            <span class="nav-pages-btn-label">About</span>
+          </a>
+                  </li>
+				  <li class="nav-pages-item " id="nav-pages-item-about" data-id="about">
+                              <a class="nav-pages-btn" id="nav-pages-btn-about" href="#">
+            <span class="nav-pages-btn-label">Clients</span>
+          </a>
+                  </li>
+				  <li class="nav-pages-item " id="nav-pages-item-about" data-id="about">
+                              <a class="nav-pages-btn" id="nav-pages-btn-about" href="#">
+            <span class="nav-pages-btn-label">Careers</span>
+          </a>
+                  </li>
+				  <li class="nav-pages-item " id="nav-pages-item-about" data-id="about">
+                              <a class="nav-pages-btn" id="nav-pages-btn-about" href="#">
+            <span class="nav-pages-btn-label">Contact</span>
+          </a>
+                  </li>
+          </ul>
+  </div>
+</nav>
+    <div id="page-container">
+      <a id="contact-btn" href="mailto:contact[at]exo-skills.com">
+  <svg id="contact-btn-picto">
+    <use xlink:href="#sprite-mail" />
+  </svg>
+</a>
+      
+<section class="page case-page" id="renault-integrity-page" data-meta-title="Renault HMI" data-switch-lang-url="http://www.exo-skills.com/fr/case-studies/renault-ihm" data-nav="Renault HMI">
+  
+    <header class="page-header" id="renault-integrity-page-header">
+    <div class="page-header-cover"></div>
+      
+        <h1 class="page-header-title" style="width:40%;padding:40px;background:rgba(0,0,0,0.4);">
+  <span class="page-header-title-line page-header-title-line-1">
+    <span class="page-header-title-line-overlay"></span>
+    <span class="page-header-title-line-txt">SIP</span>
+  </span>
+  <span class="page-header-title-line page-header-title-line-2">
+    <span class="page-header-title-line-overlay"></span>
+    <span class="page-header-title-line-txt" style="font-size:30px;line-height:30px">Take the hassle out of <br>Inventory Management</span>
+  </span>
+</h1>
+    <button onclick="scrollWin()" class="scroll-down-btn">
+  <svg class="scroll-down-btn-picto">
+    <use xlink:href="#sprite-mouse" />
+  </svg>
+  <div class="scroll-down-btn-label">scroll down</div>
+</button>  </header>
+
+  <div class="page-body" id="renault-integrity-page-body">
+
+    <div class="case-desc" style="background-color:#E6E6E6;padding:100px 0px;">
+		<div class="container">
+		<div class="col-md-4">          
+			<img id="sip-4-btn-images" src="../assets/img/cases/renault-integrity/1.jpg">
+		</div>
+	<div class="col-md-8">
+	<div id="outer" style="margin-left:10%;max-width:630px">
+		<div class="inner"><button type="submit" class="btn-sip-active" onClick="return false;" id="background-sip-button">Background</button></div>
+		<div class="inner"><button type="submit" class="btn-sip" onClick="return false;" id="why-sip-button">Why SIP?</button></div>
+		<div class="inner"><button type="submit" class="btn-sip" onClick="return false;" id="usability-sip-button">Usability</button></div>
+		<div class="inner"><button type="submit" class="btn-sip" onClick="return false;" id="case-study-sip-button">Case study</button></div>
+		
+		<h3 id="servo-sip-heading" style="text-align:left;color:#FE6000;padding-top:5%">Background</h3>
+		<p id="servo-sip-content" style="font-size:14px; line-height:30px; text-align:left">Businesses today often succeed or fail based on how efficiently and effectively they manage everyday business task of sales. Using mobile technology, software and the Internet,  Distribution Management System (DMS) uses mobile handheld units and software to automate the business tasks of sales. Our software can be tailored to provide your salespersons with precisely the information they need to close sales and facilitate order processing the way you do business. <br><br> DMS solutions puts into the hands of your Field Sales Force the tools they need to effectively 
+compete in today’s marketplace.<br><br> At the same time, it lowers the cost of the fulfillment process while increasing efficiency, accuracy and that most critical factor - Customer Satisfaction <br><br> This Software includes Indent Order Management, customer Contact Management, Order tracking, even Sales forecast analysis, and Accounting history. <br><br> It can let you provide your sales force with mobile access to real-time information while it allows you to manage the entire selling process, including post-sale follow-up and support, as well as up-selling opportunities.</p>
+	</div>
+			</div>
+			</div>
+    </div>
+	<div class="clearfix"></div>
+    
+    <div id="renault-integrity-project" style="padding:120px 0px">
+	  <div class="container"><div class="col-md-8">
+      <div class="section-text in-view-trigger" id="renault-integrity-project-text">
+        <h2 class="section-title" id="renault-integrity-project-title" style="text-transform: none;font-size:40px">features</h2>
+        
+        <div class="section-body" id="renault-integrity-project-body">
+          <ul>
+			<div class="col-md-6">
+			<li>Recommendation on distribution</li>
+			<li>Daily recommendation on replenishment</li>
+			<li>Dynamic buffer management</li>
+			<li>Mobile app to track sales team</li>
+			<li>App feature to place indent</li>
+			<li>Place indent / tracking</li>
+			<li>Daily call reports on app</li>
+			<li>Admin interface on mobile app</li>
+			<li>Road configuration for sales teams</li>
+			<li>Reports on DCR / dealer visits / tracking</li>
+			<li>Setting up Country, Zone, Region, Location, Territory</li>
+			<li>Define product category, Product code, product variety, Product names along with dimensions</li>
+			</div>
+			<div class="col-md-6">
+			<li>Configuring one unit to another. Example: Hub to Plant</li>
+			<li>Configuring products to a particular unit (Hub, Plant)</li>
+			<li>Maintain Customer list</li>
+			<li>Maintain Vendor list</li>
+			<li>Process the indent</li>
+			<li>Dispatch the quantity and ship to particular location</li>
+			<li>Reports</li>
+			<li>Users and roles</li>
+			</div>
+		  </ul>
+        </div>
+      </div>
+	  </div>
+	  <div class="col-md-4" id="img-sliders">
+		<img id="img1" src="../assets/img/sip-screen-2.jpg" style="display:none;">
+		<img id="img2" src="../assets/img/sip-screen-3.jpg" style="display:none;">
+		<img id="img3" src="../assets/img/sip-screen-4.jpg" style="display:none;">
+	  </div></div>
+	  <div class="clearfix"></div>
+    </div>
+
+    <div class="in-view-trigger" id="renault-integrity-ui-mission">
+      <img class="lazyload" id="renault-integrity-ui-mission-img" data-sizes="auto" data-srcset="http://www.exo-skills.com/assets/img/cases/renault-integrity/ui-mission.png 335w, http://www.exo-skills.com/assets/img/cases/renault-integrity/ui-mission@2x.png 670w" alt="" width="335" height="335">
+    </div>
+    
+    <!--<div id="renault-integrity-role">
+      <figure class="section-figure in-view-trigger" id="renault-integrity-role-figure">
+        <img class="lazyload" id="renault-integrity-role-img" data-sizes="auto" data-srcset="http://www.exo-skills.com/assets/img/cases/renault-integrity/screens.png 860w, http://www.exo-skills.com/assets/img/cases/renault-integrity/screens@2x.png 1721w" alt="" width="860" height="531">
+        <figcaption id="renault-integrity-role-captions">
+          <div class="renault-integrity-role-caption" id="renault-integrity-role-caption-control">
+            <div class="renault-integrity-role-caption-label">Control mission</div>
+            <svg class="renault-integrity-role-caption-arrow">
+              <use xlink:href="#sprite-arrow-02">
+            </svg>
+          </div>
+          <div class="renault-integrity-role-caption" id="renault-integrity-role-caption-waiting">
+            <div class="renault-integrity-role-caption-label">Waiting for car</div>
+            <svg class="renault-integrity-role-caption-arrow">
+              <use xlink:href="#sprite-arrow-01">
+            </svg>
+          </div>
+          <div class="renault-integrity-role-caption" id="renault-integrity-role-caption-login">
+            <div class="renault-integrity-role-caption-label">Login page</div>
+            <svg class="renault-integrity-role-caption-arrow">
+              <use xlink:href="#sprite-arrow-03">
+            </svg>
+          </div>
+        </figcaption>
+      </figure>
+      <div class="section-text in-view-trigger" id="renault-integrity-role-text">
+        <h2 class="section-title" id="renault-integrity-role-title">II. USER EXPERIENCE</h2>
+        <h3 class="section-subtitle" id="renault-integrity-role-subtitle">A « Human Centric » approach.</h3>
+        <div class="section-body" id="renault-integrity-role-body">
+          <p>We have worked on a global approach of the service to simplify and secure all actions of the car. Thus, we have developed dedicated applications. The first one aims at declaring missions while the second one aims at securing actions. This mobile ecosystem has been created in order to eliminate functional and emotional frictions related to this innovative service.</p>
+        </div>
+      </div>
+    </div>-->
+    
+    <div id="renault-integrity-ui">
+      <div class="section-text in-view-trigger" id="renault-integrity-ui-text">
+        <h2 class="section-title" id="renault-integrity-ui-title" style="color:white;text-transform:none; font-size:38px; text-align:center">clients speak</h2>
+        <div class="section-body" id="renault-integrity-ui-body">
+			<div class="container" style="width:970px">
+				<div class="col-md-3">
+					<img src="../assets/img/client.png" class="img-circle" width="200">
+				</div>
+				<div class="col-md-9" style="padding:30px">
+					<p><span style="color:#ffffff;font-size:40px">"</span>The design team priority was to conceive a clear and simple interface inspired by the brand codes with a navigation intuitive enough for the user to apprehend. Everything from shapes to colors and icons has been thought to make the application easy to understand and quickly transform intuitive use into habits of control.<span style="color:#ffffff;font-size:40px">"</span></p>
+				</div>
+			</div>
+        </div>
+      </div>
+    </div>
+        <a class="case-next-btn case-next-btn-cic in-view-trigger" href="#">
+  <div class="case-next-btn-label">Next project</div>
+  <div class="case-next-btn-project-title">
+    <span class="case-next-btn-project-title-1" style="text-transform:none">HRcubes</span>
+    <!--<span class="case-next-btn-project-title-2">HR Management System</span>-->
+  </div>
+  <div class="case-next-btn-arrow"></div>
+</a>
+  </div>
+
+</section>
+
+    </div>
+
+    <div id="contact-form-transition"></div>
+
+<div id="contact-form-wrapper">
+  <h3 class="section-title" id="contact-form-title">Contact form</h3>
+  <h4 class="section-subtitle" id="contact-form-subtitle">You want to imagine, create, develop connected products or services for your customers? <br>Contact us!</h4>
+  <button id="contact-form-close"><span id="contact-form-close-picto"></span></button>
+  <form action="http://www.exo-skills.com/contact-form" method="post" id="contact-form">
+    <div class="contact-form-item">
+      <label class="contact-form-label">
+        <span class="contact-form-label-txt">Firstname *</span>
+        <input type="text" name="first-name" required>
+      </label>
+    </div>
+    <div class="contact-form-item">
+      <label class="contact-form-label">
+        <span class="contact-form-label-txt">Name *</span>
+        <input type="text" name="name" required>
+      </label>
+    </div>
+    <div class="contact-form-item">
+      <label class="contact-form-label">
+        <span class="contact-form-label-txt">Company *</span>
+        <input type="text" name="company" required>
+      </label>
+    </div>
+    <div class="contact-form-item">
+      <label class="contact-form-label">
+        <span class="contact-form-label-txt">Email *</span>
+        <input type="email" name="email" required>
+      </label>
+    </div>
+    <div class="contact-form-item">
+      <label class="contact-form-label">
+        <span class="contact-form-label-txt">Phone</span>
+        <input type="text" name="phone" inputmode="tel">
+      </label>
+    </div>
+    <div class="contact-form-item">
+      <label class="contact-form-label">
+        <span class="contact-form-label-txt">City</span>
+        <input type="text" name="city">
+      </label>
+    </div>
+    <div class="contact-form-item" id="contact-form-item-message">
+      <label class="contact-form-label">
+        <span class="contact-form-label-txt">Your message *</span>
+        <textarea name="message" required></textarea>
+      </label>
+    </div>
+    <div class="contact-form-item" id="contact-form-mail">
+      <div id="contact-form-mail-inner">
+        <div id="contact-form-mail-heading">
+          <div id="contact-form-mail-title">
+            <span id="contact-form-mail-title-text">You do not like forms?</span>
+          </div>
+          <div id="contact-form-mail-subtitle">
+            <span id="contact-form-mail-subtitle-text">Send us an e-mail</span>
+          </div>
+        </div>
+        <a id="contact-form-mail-link" href="mailto:info@ircaindia.com">
+          <span id="contact-form-mail-link-txt">info@ircaindia.com</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-form-item" id="contact-form-infos">
+      <div class="contact-form-info" id="contact-form-info-success">Your message has been successfully sent.</div>
+      <div class="contact-form-info" id="contact-form-info-fail">Your message could not be sent.</div>
+    </div>
+    <div class="contact-form-item" id="contact-form-submit">
+      <div id="contact-form-submit-btn-wrapper">
+        <input type="submit" value="Send" id="contact-form-submit-btn">
+        <div id="contact-form-submit-anim">
+          <div class="contact-form-submit-anim-dot"></div>
+          <div class="contact-form-submit-anim-dot"></div>
+          <div class="contact-form-submit-anim-dot"></div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+    <div id="page-transition"></div>
+
+    <div id="page-overlay"></div>
+
+    <footer id="footer">
+  <div id="footer-main-content">
+    <div id="footer-contact">
+      <h3 class="footer-title">Contact us</h3>
+      <h4 id="footer-contact-motto">Let’s build the future of digital products together.</h4>
+      <div id="footer-contact-links">
+        <ul id="footer-offices">
+          <li class="footer-office" id="footer-office-lyon">
+			<p>Integrated Risk Control Applications Pvt Ltd <br>No-702, 7th Floor, <br>Manipal Center North Block, Dickenson Road, <br>Bangalore - 560042</p>
+            <a class="footer-office-mail" href="mailto:info@ircaindia@.com">info@ircaindia.com</a>
+            <svg class="footer-office-picto">
+              <use xlink:href="#sprite-lyon" />
+            </svg>
+          </li>
+        </ul>
+        <ul id="footer-social">
+          <li class="footer-social-item">
+            <a class="footer-social-link" id="footer-twitter" href="#" target="_blank">
+              <svg class="footer-social-picto">
+                <use xlink:href="#sprite-twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" id="footer-linkedin" href="#" target="_blank">
+              <svg class="footer-social-picto">
+                <use xlink:href="#sprite-linkedin" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" id="footer-pinterest" href="#" target="_blank">
+              <svg class="footer-social-picto">
+                <use xlink:href="#sprite-pinterest" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" id="footer-viadeo" href="#" target="_blank">
+              <svg class="footer-social-picto">
+                <use xlink:href="#sprite-viadeo" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" id="footer-googleplus" href="#" target="_blank">
+              <svg class="footer-social-picto">
+                <use xlink:href="#sprite-googleplus" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer-copyright">© 2017 All rights reserved IRCA India  |  Brands mentionned above are property of their respective owner.</div>
+</footer>
+        <script>
+      var app = {
+        debug: true,
+        mode: "prod",
+        baseUrl: "http://www.ircaindia.com",
+        rootUri: "",
+        lang: "en",
+        isMobile: false,
+        isTablet: false,
+        routes: {"/":{"id":"home","view":"home"},"/case-studies/renault-hmi":{"id":"renault-integrity","nav-id":"work","view":"cases/renault-integrity","lang":{"fr":"/case-studies/renault-ihm"}},"/case-studies/engie-material-design":{"id":"engie-digital-design","nav-id":"work","view":"cases/engie-digital-design"},"/case-studies/shopping-robot":{"id":"shopping-robot","nav-id":"work","view":"cases/shopping-robot"},"/case-studies/cic-bank-connected-office":{"id":"cic","nav-id":"work","view":"cases/cic"},"/vision-method":{"id":"about","view":"about","lang":{"fr":"/vision-methode"}},"/offices-team":{"id":"contact","view":"contact","lang":{"fr":"/bureaux-equipe"}}}
+      };
+    </script>
+
+                <!--<script src="../assets/js/dcb6ttn.js"></script>-->
+                <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="http://www.exo-skills.com/assets/js/lib/jquery-2.1.4.min.js" ?>"><\/script>')</script>
+
+        <script src="../assets/js/scripts.js"></script>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="../assets/js/viewportchecker.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+		$('#outer').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInRight', // Class to add to the elements when they are visible
+			offset: 100    
+		});
+		$('#renault-integrity-project-text').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInLeft', // Class to add to the elements when they are visible
+			offset: 100    
+		});
+		$('#img-sliders').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeInRight', // Class to add to the elements when they are visible
+			offset: 100    
+		});
+		$('#renault-integrity-ui').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+			offset: 100    
+		});
+	});            
+	</script>
+	<script>
+		function scrollWin() {
+			window.scrollTo(0, 650);
+		}
+	</script>
+
+  </body>
+</html>
+
